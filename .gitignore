@@ -1,6 +1,10 @@
-HELP.md
+/client/node_modules
+
 
 !.mvn/wrapper/maven-wrapper.jar
+
+.target
+*.original
 
 ### STS ###
 .apt_generated
