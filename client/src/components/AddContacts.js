@@ -10,7 +10,7 @@ export default class AddContacts extends Component {
             email: this.refs.email.value,
         }
 
-        fetch("http://localhost:8080/api/contacts", {
+        fetch("https://done-byly.onrender.com:8080/api/contacts", {
             method: "POST",
             headers: {
                 "content-type": "application/json",
