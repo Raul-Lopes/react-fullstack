@@ -11,7 +11,7 @@ export default class Contacts extends Component {
     }
 
     componentDidMount() {
-        fetch('https://done-byly.onrender.com:8080/api/contacts')
+        fetch('https://done-byly.onrender.com/api/contacts')
         .then(response => response.json())
         .then(data => this.setState({contacts: data}))
     }
