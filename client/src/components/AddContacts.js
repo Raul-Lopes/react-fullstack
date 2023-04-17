@@ -12,6 +12,7 @@ export default class AddContacts extends Component {
 
         fetch("https://done-byly.onrender.com/api/contacts", {
             method: "POST",
+            mode: "cors",
             headers: {
                 "content-type": "application/json",
             },
