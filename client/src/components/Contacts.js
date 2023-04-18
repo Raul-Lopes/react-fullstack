@@ -10,20 +10,18 @@ export default class Contacts extends Component {
         };
     }
 
-    /*componentDidMount() {
-        fetch('https://done-byly.onrender.com/api/contacts')
-        .then(response => response.json())
-        .then(data => this.setState({contacts: data}))
-    }*/
-
     componentDidMount() {
         fetch('https://done-byly.onrender.com/api/contacts', {
-           mode: 'cors'
+           method: 'GET', // *GET, POST, PUT, DELETE, etc.
+           mode: 'cors', // no-cors, cors, same-origin
+           headers: {
+              'Content-Type': 'application/json'
+           }
         })
         .then(response => response.json())
         .then(data => this.setState({contacts: data}))
         .catch(error => console.log(error))
-    }    
+    }
     
     render() {
         return (
